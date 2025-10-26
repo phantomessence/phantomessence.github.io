@@ -1,0 +1,275 @@
+/* ================================
+   PHANTOM ESSENCE – Style.css
+   ================================ */
+
+/* === Fuentes y base === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+}
+
+.navbar-brand span {
+  color: #c2a95f;
+}
+
+.nav-link {
+  color: #ddd !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #c2a95f !important;
+  transform: scale(1.05);
+}
+
+/* === CAROUSEL === */
+.carousel-item img {
+  object-fit: cover;
+  height: 90vh;
+  filter: brightness(75%);
+}
+
+.carousel-caption {
+  bottom: 25%;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-caption h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.carousel-caption .btn {
+  background-color: #c2a95f;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #d8bb73;
+  transform: translateY(-3px);
+}
+
+/* === SECCIONES GENERALES === */
+.section-padding {
+  padding: 100px 0;
+}
+
+.about-img img {
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(194, 169, 95, 0.2);
+  transition: all 0.4s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.03);
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  color: #c2a95f;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #dcdcdc;
+  line-height: 1.8;
+}
+
+.about-text .btn {
+  background-color: #c2a95f;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.about-text .btn:hover {
+  background-color: #d8bb73;
+  transform: translateY(-3px);
+}
+
+/* === SERVICIOS === */
+.services .card {
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  box-shadow: 0 0 25px rgba(194, 169, 95, 0.1);
+  transition: all 0.4s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px rgba(194, 169, 95, 0.3);
+}
+
+.services i {
+  color: #c2a95f;
+  margin-bottom: 15px;
+}
+
+/* === PORTAFOLIO / MARCAS === */
+.portfolio .card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #141414;
+  transition: all 0.4s ease;
+}
+
+.portfolio .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(194, 169, 95, 0.25);
+}
+
+.portfolio .card img {
+  border-bottom: 3px solid #c2a95f;
+}
+
+.portfolio .btn {
+  background-color: #c2a95f;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.portfolio .btn:hover {
+  background-color: #d8bb73;
+}
+
+/* === TEAM === */
+.team .card {
+  border: none;
+  border-radius: 20px;
+  background-color: #111;
+  transition: all 0.4s ease;
+}
+
+.team .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(194, 169, 95, 0.3);
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #c2a95f;
+  margin-bottom: 15px;
+}
+
+.team h3 {
+  font-family: 'Playfair Display', serif;
+  color: #c2a95f;
+  font-weight: 600;
+}
+
+/* === CONTACTO === */
+.contact {
+  background-color: #0f0f0f;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #c2a95f;
+  outline: none;
+}
+
+.contact .btn {
+  background-color: #c2a95f;
+  border: none;
+  font-weight: 600;
+}
+
+.contact .btn:hover {
+  background-color: #d8bb73;
+  transform: translateY(-2px);
+}
+
+/* === FOOTER === */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+
+/* === ANIMACIONES SUAVES === */
+img,
+.btn,
+.card,
+.nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 991px) {
+  .carousel-caption h5 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .about-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
