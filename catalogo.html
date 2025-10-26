@@ -811,35 +811,35 @@
 
 
 <!-- CONTACT -->
-<section id="contacto" class="contact">
-  <div class="container container-narrow">
-    <div class="section-header text-center mb-4">
-      <h2>Contacto</h2>
-      <p>¿Dudas, pedidos especiales o colaboraciones? Escríbenos.</p>
-    </div>
+<form action="https://api.web3forms.com/submit" method="POST" class="row g-3">
+  <!-- Access Key -->
+  <input type="hidden" name="access_key" value="9b05af5f-9ee3-4d46-8432-63db9a75a4dd">
 
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10">
-        <form action="https://formsubmit.co/jezerballadarestiktok@gmail.com" method="POST" class="row g-3">
-          <input type="hidden" name="_captcha" value="false">
-          <div class="col-md-6">
-            <label class="form-label visually-hidden" for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" class="form-control" type="text" placeholder="Nombre" required>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label visually-hidden" for="correo">Correo</label>
-            <input id="correo" name="correo" class="form-control" type="email" placeholder="Correo" required>
-          </div>
+  <!-- Personalización -->
+  <input type="hidden" name="subject" value="Nuevo mensaje desde Phantom Essence 💌">
+  <input type="hidden" name="from_name" value="Phantom Essence - Web">
+  <input type="hidden" name="redirect" value="https://phantomessence.github.io/gracias.html">
 
-          <div class="col-12">
-            <label class="form-label visually-hidden" for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Mensaje" required></textarea>
-          </div>
+  <div class="col-md-6">
+    <label class="form-label visually-hidden" for="nombre">Nombre</label>
+    <input id="nombre" name="name" class="form-control" type="text" placeholder="Nombre" required>
+  </div>
 
-          <div class="col-12 text-end">
-            <button class="btn btn-cta" type="submit">Enviar</button>
-          </div>
-        </form>
+  <div class="col-md-6">
+    <label class="form-label visually-hidden" for="correo">Correo</label>
+    <input id="correo" name="email" class="form-control" type="email" placeholder="Correo" required>
+  </div>
+
+  <div class="col-12">
+    <label class="form-label visually-hidden" for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="message" rows="4" class="form-control" placeholder="Mensaje" required></textarea>
+  </div>
+
+  <div class="col-12 text-end">
+    <button class="btn btn-cta" type="submit">Enviar</button>
+  </div>
+</form>
+
 
         <!-- BARRA DE REDES SOCIALES -->
         <div class="text-center mt-4">
@@ -940,3 +940,4 @@
     </script>
   </body>
 </html>
+
